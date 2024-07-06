@@ -189,6 +189,7 @@ color: var(--textos2)
 .fondoG:hover{
     background-color: var(--fondoClaro);
     color:var(--principal);
+    transition: .2s;
 }
 
 .fondoP{
