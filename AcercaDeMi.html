@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- modificar desde aqui -->
+    <title>Acerca de mí</title>
+    <meta name="description" content="descripcion del sitio web">
+    <meta name="keywords" content="palabras,claves,del,sitio">
+    <link rel="icon" type="image/x-icon" href="assets/img/Favicon.png">
+    <!-- acá va la tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- acá se agrega el css de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- acá agrego mi propio css -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md barraNavegacion">
+            <div class="container-fluid mx-3">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="assets/img/logo - copia.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""><i class="bi bi-list"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- ms auto para alinear a la derecha -->
+                    <!-- mx-auto para alinear al centro -->
+                    <!-- me-auto para alinear a la izquierda -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- el inicio es opcinal. depende del publico objetivo -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#Portafolio">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AcercaDeMi.html">Acerca de mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" href="assets/archivos/CV Javiera Carvajal.pdf">CV</a>
+                        </li>
+                        <div class="d-flex flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="https://www.linkedin.com/in/javiera-carvajal-mart%C3%ADnez-8755b7207/"><i
+                                        class="bi bi-linkedin"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:carvajalmartinezjaviera@gmail.com"><i
+                                        class="bi bi-envelope-fill"></i></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <section class="row d-flex justify-content-center align-items-center pb-5 my-5">
+            <article class="col-10 col-md-6 col-lg-5 contenedorTextoAcerca contTextoIzq">
+                <h3>Acerca de mí</h3>
+                <p>
+                    ¡Hola! Soy Javiera Carvajal, una apasionada diseñadora UX/UI con experiencia en diseño
+                    industrial. Mi objetivo es crear experiencias digitales intuitivas y atractivas que solucionen
+                    problemas reales y mejoren la vida de los usuarios.
+                </p>
+                <p>Soy una persona curiosa y siempre estoy en busca de nuevas formas de aprender y mejorar mis
+                    habilidades. Me apasiona el diseño porque combina creatividad con resolución de problemas, y me
+                    encanta ver cómo mis diseños cobran vida y pueden llegar a ser utilizados por personas reales.
+                </p>
+                <p>En mi tiempo libre, disfruto de la compañía de mis gatos y mis cercanos, explorar nuevos lugares
+                    y sumergirme en la naturaleza con sus vibrantes colores, texturas y aromas refrescantes. Me
+                    apasiona aprender nuevas cosas, especialmente manualidades y el uso de herramientas innovadoras
+                    que estimulen mi creatividad y enriquezcan mi trabajo.</p>
+            </article>
+            <article class="col-10 col-md-6 col-lg-5 contenedorImagenAcerca">
+                <img src="assets/img/Group 3.png" alt="" class="img-fluid">
+            </article>
+        </section>
+        <section class="row d-flex justify-content-center align-items-center pb-5 my-5">
+            <article class="col-10 col-md-6 col-lg-5 contenedorTextoAcerca contTextoDer order-1 order-md-2">
+                <h3>Mi enfoque</h3>
+                <p>Creo firmemente en el diseño centrado en el usuario. Cada proyecto que realizo comienza con una
+                    investigación exhaustiva para comprender las necesidades y deseos de los usuarios. Utilizo esta
+                    información para crear productos e interfaces que no solo sean funcionales, sino también agradables
+                    de usar. La iteración y la retroalimentación constante son claves en mi proceso de diseño,
+                    asegurando que el producto final sea lo mejor posible.</p>
+            </article>
+            <article class="col-10 col-md-6 col-lg-5 contenedorImagenAcerca order-2 order-md-1">
+                <img src="assets/img/Group 2.png" alt="" class="img-fluid">
+            </article>
+        </section>
+        <section class="row d-flex justify-content-center align-items-center pb-5 my-5">
+            <article class="col-10 col-md-6 col-lg-5 contenedorTextoAcerca contTextoIzq">
+                <h3>Habilidades</h3>
+                <p><span class="destacado">Investigación UX:</span> entrevistas, encuestas y cuestionarios, análisis
+                    de
+                    comportamiento, pruebas de usabilidad, métricas.</p>
+                <p><span class="destacado">Diseño de interacción:</span> wireframes, flujos de usuario, prototipos
+                    interactivos, test
+                    de usabilidad.</p>
+                <p><span class="destacado">Arquitectura de la Información:</span> Card sorting, diagramas de flujo,
+                    mapa del sitio,
+                    prototipos de baja y mediana fidelidad. </p>
+                <p><span class="destacado"> Diseño visual:</span> diseño de interfaces, prototipado de alta
+                    fidelidad.</p>
+                <p><span class="destacado"> Diseño de productos:</span> investigación de usuarios, prototipado,
+                    modelado y
+                    renderización, CAD.</p>
+                <p><span class="destacado">Herramientas:</span> Figma, Illustrator, Inventor, 3d Max, AutoCad,
+                    Photoshop, Visual
+                    estudio code.</p>
+            </article>
+            <article class="col-10 col-md-6 col-lg-5 contenedorImagenAcerca">
+                <img src="assets/img/Group 1.png" alt="" class="img-fluid">
+            </article>
+        </section>
+        <section class="row">
+            <article class="col-md-10 col-12 text-center mx-auto mt-5">
+                <div class="contenedorEtiquetas">
+                    <p class="etiquetas">Pensamiento investigativo y creativo</p>
+                    <p class="etiquetas">Capacidad para la identificación, análisis y resolución de problemas</p>
+                    <p class="etiquetas">Compromiso social y enfoque humanitario.</p>
+                    <p class="etiquetas">Apasionada y comprometida</p>
+                    <p class="etiquetas">Trabajo en equipo</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- desde acá parte el footer  -->
+    <footer id="footer" class="container-fluid p-5">
+        <section class="row">
+            <article class="col-11 mx-auto col-md-5 col-lg-3 mx-auto">
+                <h5>Contacto</h5>
+                <ul>
+                    <li>Javiera Carvajal</li>
+                    <li>+56 9 82476494</li>
+                    <li>carvajalmartinezjaviera@gmail.com</li>
+                </ul>
+            </article>
+            <article class="col-11 mx-auto col-md-5 col-lg-3">
+                <img class="img-fluid" src="assets/img/" alt="">
+            </article>
+            <article class="col-11 mx-auto col-md-5 col-lg-3 border-start">
+                <h5>Hablemos</h5>
+                <div class="subFooter d-flex flex-row">
+                    <a href="https://www.linkedin.com/in/javiera-carvajal-mart%C3%ADnez-8755b7207/"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://www.behance.net/javieracarvaja2"><i class="bi bi-behance"></i></a>
+                    <a href="mailto:carvajalmartinezjaviera@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+            </article>
+
+        </section>
+        <section class="row mt-5 border-top pt-3">
+            <article class="col-12 text-center">
+                Copyright © 2024 Portafolio - Javiera Carvajal
+            </article>
+        </section>
+    </footer>
+
+    <!-- javascript para el funcionamiento de algunas cosas de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

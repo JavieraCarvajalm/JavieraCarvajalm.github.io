@@ -1,0 +1,348 @@
+:root {
+    --fondo: #13161c;
+    --fondoClaro: #4E4E4E;
+    --fondoOscuro: #2f3031;
+
+    --principal: #FEFE89;
+    --principalClaro: #F9E86E;
+    --principalOscuro: #ECD740;
+
+
+    --textos: #eeeeee;
+    --textos2: #0c0b0b;
+
+}
+
+body {
+    background-color: var(--fondoOscuro);
+    color: var(--textos);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* clases del navbar */
+.barraNavegacion {
+    background-color: var(--fondo);
+    color: var(--textos);
+}
+
+.nav-link {
+    color: var(--textos);
+}
+
+.nav-link:hover {
+    color: var(--principal);
+}
+
+.nav-link i{
+font-size: 20px;
+margin: 0 3px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--principal);
+}
+.nav-item{
+    margin: auto 0;
+}
+
+.navbar-toggler {
+    color: var(--textos);
+    border-color: var(--principal);
+}
+
+.navbar-toggler:focus{
+color: var(--principalClaro);
+}
+
+.logo {
+    height: 40px;
+}
+
+.gif{
+    width: 15%;
+    border-radius: 50px;
+}
+
+/* texto e imagen */
+.contenedorInfo{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+
+}
+
+.cadaInfo{
+    margin-bottom: 40px;
+}
+
+.contenedorImg{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contenedorImg img{
+    width: 100%;
+}
+
+.contenedorTexto{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.contenedorTexto h3{
+    color: var(--principal);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.alinearIzq{
+    margin: 0;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.btnbotón{
+    background-color: var(--principal);
+    color: var(--textos2);
+}
+
+.btnbotón:hover{
+    background-color: var(--principalOscuro);
+    color: var(--textos2);
+}
+
+.destacado{
+    color: var(--principal);
+}
+
+/* estilos cards */
+.seccionProyecto .card{
+    border: none;
+    background-color: transparent;
+    color: var(--textos);
+    transition: background .4s;
+}
+
+.btnPrincipal{
+    background-color: var(--principal);
+    color: var(--textos2);
+}
+
+.btnPrincipal:hover{
+    border-width: 1px;
+    border-color: var(--principal);
+    border-style: solid;
+    transition: .2s;
+}
+
+.seccionProyecto h5{
+    margin-bottom: 0;
+    margin-top: 3px;
+    transition: margin .4s;
+}
+
+.seccionProyecto p{
+    font-size: 12px;
+    font-weight:300;
+    color: var(--principalClaro);
+}
+
+.card img{
+    transition: all .4s;
+}
+
+.card:hover h5{
+    margin-top: -5px;
+}
+
+.card:hover{
+    background-color: var(--fondo);
+}
+
+
+/* CONTENEDORES texto */
+
+.fondoG{
+    background-color: var(--principal);
+    color: var(--textos2);
+    text-align: left;
+    padding: 10px;
+    margin-top: auto;
+    height: 100%;
+}
+
+.fondoG p{
+color: var(--textos2)
+}
+
+.fondoG:hover p{
+    color: var(--textos)
+    }
+
+
+.fondoG:hover{
+    background-color: var(--fondoClaro);
+    color:var(--principal);
+}
+
+.fondoP{
+    background-color: var(--fondoClaro);
+    color: var(--textos);
+    text-align: left;
+    padding: 10px;
+    margin-top: auto;
+    height: 100%;
+}
+
+.fondoP:hover{
+    border-width: 1px;
+    border-color: var(--principal);
+    border-style: solid;
+    transition: .2s;
+}
+
+/* img acerca de mi  */
+.contenedorImg{
+    filter: grayscale(1);
+}
+
+.contenedorImg:hover{
+    filter: none;
+    transition: all .2s;
+}
+
+/* etiquetas  */
+
+.contenedorEtiquetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.contenedorEtiquetas .etiquetas{
+    background-color: var(--principal);
+    color: var(--textos2);
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+.contTextoIzq,
+.contTextoDer{
+    text-align: left;
+}
+
+.contenedorTextoAcerca{
+    margin-bottom: 30px;
+}
+
+.contenedorTextoAcerca h3{
+    color: var(--principal);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.contenedorImagenAcerca{
+    filter: none;
+    transition: filter .6s;
+}
+
+@media (min-width: 768px) {
+    .contenedorTextoAcerca{
+        margin-bottom: 0;
+    }
+    .contTextoIzq{
+        text-align: right;
+    }
+    .contTextoDer{
+        text-align: left;
+    }
+    .contenedorImagenAcerca{
+        filter: grayscale(1);
+    }
+    .contenedorImagenAcerca:hover{
+        filter: grayscale(0);
+    }
+}
+
+/* fondo texto acerca de mí  */
+.fondoT{
+    background-color: var(--principal);
+    color: var(--textos2);
+    text-align: center;
+}
+
+/* detacado acerca de mí  */
+.span{
+    color: var(--principal);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--fondoClaro);
+}
+
+footer h5{
+    color: var(--principal);
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 15px;
+}
+
+footer li{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    transition: all .4s;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--textos);
+}
+
+footer li:hover{
+    border-left: 8px solid var(--principal);
+    padding-left: 12px;
+}
+
+footer i{
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+footer i:hover{
+    color: var(--principal);
+}
+
+.footerSub{
+    border-right: 1px solid var(--textos);
+}
+
+.footerSub:hover{
+    text-decoration: underline;
+    border-left: none;
+}
+
+.footerSub:last-child{
+    border-right: none;
+}
+
+.subFooter{
+    margin-bottom: 20px;
+}
+
+.parrafo{
+    font-size: 15px;
+}
