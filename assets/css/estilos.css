@@ -273,9 +273,6 @@ color: var(--textos2)
     .contenedorImagenAcerca:hover{
         filter: grayscale(0);
     }
-    .fondoG{
-text-size-adjust: 12px;
-    }
 }
 
 /* fondo texto acerca de mí  */
